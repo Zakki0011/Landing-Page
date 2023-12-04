@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #love-message {
+            text-align: center;
+            animation: fadeIn 2s ease-out;
+        }
+
+        #hearts-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .heart {
+            animation: floatHearts 2s infinite linear;
+            font-size: 36px;
+            color: #e74c3c;
+            margin: 0 5px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes floatHearts {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="love-message">
+        <h2>I love you Faseeha</h2>
+        <div id="hearts-container">
+            <div class="heart">❤️</div>
+            <div class="heart">❤️</div>
+            <div class="heart">❤️</div>
+            <!-- Add more hearts as needed -->
+        </div>
+    </div>
+
+</body>
+</html>
